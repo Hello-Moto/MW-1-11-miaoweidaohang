@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .navBar{padding: 100px;}
+        .navBar > a{float: left;text-decoration: none;color: #000;height: 30px;margin: 0 10px;font: 16px/30px "微软雅黑";perspective: 50px;}
+        .navBar > a > span{float: left;height: 30px;transform-style: preserve-3d;transition: .5s;transform-origin: center center -15px;}
+        .navBar > a > span >em{font-style: normal;display: block;backface-visibility: hidden;}
+        .navBar > a > span >em:nth-child(2){transform-origin: top;transform: rotateX(-90deg);color:blueviolet;}
+        .navBar > a:hover span{transform: rotateX(90deg);}
+    </style>
+</head>
+<body>
+    <nav class="navBar">
+        <a href="#">
+            <span>
+                <em>首页</em>
+                <em>首页</em>
+            </span>
+        </a>
+        <a href="#">
+            <span>
+                <em>关于我们</em>
+                <em>关于我们</em>
+            </span>
+        </a>
+        <a href="#">
+            <span>
+                <em>联系我们</em>
+                <em>联系我们</em>
+            </span>
+        </a>
+    </nav>
+</body>
+</html>
